@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+ 
+<header>
+  <nav>
+    <h2 class="logo">Portfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+</header>
+ 
+<section id="home" class="hero">
+  <div class="content">
+    <h1>Hello, I'm <span>Lakshay Mittal</span></h1>
+    <h3>Software Engineer</h3>
+    <p>Aspiring Software Developer with a strong interest in web development and programming. I have hands-on experience with Python, HTML, CSS, JavaScript, and C++.</p>
+    <button onclick="scrollToSection()">Hire Me</button>
+  </div>
+  <div class="image">
+    <img src="C:\Users\laksh\Downloads\WhatsApp Image 2026-07-01 at 10.18.53 PM.jpeg" alt="Lakshay Mittal">
+  </div>
+</section>
+ 
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am <b>Lakshay Mittal</b>, a B.Tech Computer Science and Engineering student and aspiring software developer, passionate about building impactful solutions through technology, programming, and innovation. With strong skills in Python, Java, C++, JavaScript, HTML, CSS, and Node.js, I enjoy creating both web applications and IoT-based systems. My focus is on developing projects that combine scalability, reliability, and creativity, while continuously improving my technical expertise.
+  </p>
+</section>
+ 
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skill-box">
+    <div class="card"><i class="fa-brands fa-html5"></i><h3>HTML</h3></div>
+    <div class="card"><i class="fa-brands fa-css3-alt"></i><h3>CSS</h3></div>
+    <div class="card"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div>
+    <div class="card"><i class="fa-brands fa-node"></i><h3>Node.js</h3></div>
+    <div class="card"><i class="fa-brands fa-python"></i><h3>Python</h3></div>
+    <div class="card"><i class="fa-solid fa-code"></i><h3>C++</h3></div>
+  </div>
+</section>
+ 
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project"><h3>IoT Smart Waste Segregation System</h3><p>An innovative IoT solution designed to monitor, control, and optimize resource regeneration processes using smart sensors and microcontrollers. The system enables real-time data collection, automated decision-making, and efficient resource utilization, contributing to sustainability and smart city applications.</p></div>
+    <div class="project"><h3>Archigen</h3><p>Archigen is a Java-based desktop application designed to simplify and automate the process of estimating construction costs. It provides architects, engineers, and project managers with a structured breakdown of expenses, helping them make informed decisions during the planning phase.</p></div>
+    <div class="project"><h3>My Portfolio</h3><p>My portfolio is a responsive, modern web application designed to showcase my skills, projects, and achievements as a B.Tech Computer Science student. It includes dedicated sections for Home, About, Skills, Projects, Certifications, and Contact, ensuring a clean and professional presentation.</p></div>
+  </div>
+</section>
+ 
+<section id="certificates">
+  <h2>Certifications:</h2>
+  <ul>
+    <li data-description="This course covered Java basics including OOP principles, syntax, and exception handling. It emphasized problem-solving and modular programming. I gained hands-on experience with IDEs and debugging. The certificate validates my ability to write efficient Java code. It also prepared me for advanced Java frameworks.">
+      <i class="fa-solid fa-certificate"></i> Java Programming Fundamentals – Infosys
+    </li>
+    <li data-description="Introduced Python fundamentals such as variables, loops, and functions. Focused on writing clean, readable code. Covered error handling and basic data structures. Strengthened logical thinking and algorithmic skills. Prepared me for real-world scripting tasks.">
+      <i class="fa-solid fa-certificate"></i> Programming fundamentals using python part1 – Infosys
+    </li>
+    <li data-description="Explored HTML structure, tags, and forms. Learned semantic markup and accessibility best practices. Covered responsive layouts and integration with CSS. Built small projects to reinforce concepts. Certificate demonstrates proficiency in web page creation.">
+      <i class="fa-solid fa-certificate"></i> HTML tutorials – Great Learning
+    </li>
+    <li data-description="Awarded for outstanding contribution at CGC University. Recognized teamwork, leadership, and innovation. Highlighted dedication to academic and extracurricular excellence. Strengthened my confidence and credibility. Serves as motivation for future achievements.">
+      <i class="fa-solid fa-certificate"></i> Certificate of Appreciation – CGC university
+    </li>
+    <li data-description="Focused on Data Structures and Algorithms using C++. Covered arrays, linked lists, stacks, queues, and trees. Emphasized time and space complexity analysis. Included practical coding challenges and projects. Certificate validates strong problem-solving skills.">
+      <i class="fa-solid fa-certificate"></i> DSA with C++ Bootcamp – Lets Upgrade
+    </li>
+    <li data-description="Introduced relational databases and SQL queries. Covered schema design, normalization, and joins. Practiced writing efficient queries for CRUD operations. Learned indexing and optimization techniques. Certificate demonstrates ability to manage and query databases.">
+      <i class="fa-solid fa-certificate"></i> Database and SQL – Infosys
+    </li>
+  </ul>
+</section>
+ 
+<section id="contact">
+  <h2>Contact</h2>
+  <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <p id="form-status"></p>
+</section>
+ 
+<footer>
+  <p>© 2026 Lakshay Mittal | All Rights Reserved</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/lakshay1480" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Lakshaymittal07" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://instagram.com/lakshay_mittal07" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
